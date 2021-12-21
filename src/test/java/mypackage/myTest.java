@@ -59,7 +59,7 @@ public class myTest {
 						   					.assertThat()
 						   					.statusCode(200)
 						   					.extract()
-						   					.jsonPath();
++						   					.jsonPath();
 						   		
 			
 			numberList.add((Integer) jsonPathEvaluator.get("number"));
@@ -67,12 +67,15 @@ public class myTest {
 			textList.add((String) jsonPathEvaluator.get("text"));
 			typeList.add((String) jsonPathEvaluator.get("type"));
 			dateList.add((String) jsonPathEvaluator.get("date"));
-			
+						
 		}
 		
 		System.out.println("Desired result:");
 		System.out.println("Text array list:"+textList);
+
 		System.out.println("Number array list:"+foundList);
+
+		
 		System.out.println("Found array list:"+foundList);
 		System.out.println("Type array list:"+typeList);
 		System.out.println("Date array list:"+dateList);
